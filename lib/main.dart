@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Apps'),
     );
   }
 }
@@ -37,11 +37,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _pages = <Widget>[
-    MyApp22(),
-    MyApp1(),
-    MyApp3()
-  ];
+  static const List<Widget> _pages = <Widget>[MyApp22(), MyApp1(), MyApp3()];
 
   void _onItemTapped(int index) {
     setState(() {
